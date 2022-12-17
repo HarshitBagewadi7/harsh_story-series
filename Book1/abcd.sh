@@ -7,8 +7,7 @@ echo "How old are you?"
 read age
 echo "Set age limit:"
 read age_limit
-if [$(age) -gt $(age_limit)]
-then
+if [ $age -gt $age_limit ]; then
 	echo "You have access to all stories, happy reading!"
 else
 	echo "You have access to kids section, happy reading!"
