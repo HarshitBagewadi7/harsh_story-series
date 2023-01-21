@@ -1,22 +1,100 @@
-.intro {
-    text-align: left; clear: both;
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('fonts/RobotoSlab-Black.ttf');
 }
 
+.main {
+    font-family: 'Cookie', cursive;
+    font-size: 24px;
+}
+
+.parent{
+    background-color: blanchedalmond;
+    padding: 20px;
+    border: 20px;
+}
+
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active{
+    color: red;
+}
 
 table{
     text-align: left;
 }
 
+.header{
+    background-color: burlywood;
+    /*padding: 2px;
+    width: 1000px;*/
+    position: sticky;
+    top: 10px;
+    text-align: left; clear: both;
+    font-family: 'Aclonica', sans-serif;
+    /*font-family: 'Roboto Slab', serif;
+    /*font-family: 'Roboto Slab', sans-serif; /*Custom Font Style Import*/
+}
+
+.direct_links{
+    background-color: bisque;
+    padding: 2px;
+    /*width: 1000px;*/
+    font-size: 16px;
+    font-family: 'Aclonica', sans-serif;
+    /*font-family: 'Roboto Slab', sans-serif; /*Custom Font Style Import*/
+}
+
+.date{
+    background-color: burlywood;
+    /*padding: 2px;
+    width: 1000px;*/
+    font-size: 16px;
+}
+
+.container:hover{
+    background-color: lightgray;
+}
+
+.container:active{
+    background-color: gray;
+}
+
 .right_align{
-    padding-left: 1000px;
+    float: right; clear: both;
+    padding-left: 500px;
+    /*style="text-align: right: ; clear: left"*/
+    /*text-align: right: clear: both;*/
 }
 
-.larger_font{
-    font-size: larger;
+progress{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(148,96,61);
 }
 
-#medium_font{
-    font-size: medium;
+/*Chrome, Safari and Edge*/
+progress[value]::-webkit-progress-bar{
+    background-color: rgb(48, 26, 11);
+}
+
+progress[value]::-webkit-progress-value{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: linear-gradient(45deg, #c4445c 25%, #c22544 25%, #c22544 50%, #c4445c 50%, #c4445c 75%, #c22544 75%, #c22544 100%);
+    background-size: 56.57px 56.57px;
 }
 
 
