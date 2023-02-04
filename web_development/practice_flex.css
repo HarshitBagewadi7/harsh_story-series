@@ -1,0 +1,32 @@
+#upcoming{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+}
+
+.courseImage{
+    width: 100%;
+}
+
+.course{
+    width: 25%;
+}
+a{
+    text-decoration: none;
+}
+
+#benefits{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.icon{
+    width: 40%;   
+}
+
+.charachter{
+    width: 25%;
+    text-align: center;
+}

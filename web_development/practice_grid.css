@@ -1,0 +1,106 @@
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 991px) {
+    #upcoming{
+        display: flex;
+        background-color: yellow;
+        justify-content: space-evenly;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .courseImage{
+        width: 100%;
+    }
+    
+    .course{
+        width: 100%;
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    #wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .left_align{
+        background-color: black;
+        color: aliceblue;
+        font-weight: 1000;
+        font-size: 40px;
+        height: max-content;
+        /* position: sticky;
+        top: 0; */
+        /* height: 100vh; */
+        /* box-sizing: border-box; */
+    }
+    
+    .icon{
+        width: 6%;
+    }
+    
+    .link_color{
+        color: aliceblue;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #upcoming{
+        display: flex;
+        background-color: yellow;
+        justify-content: space-evenly;
+        padding: 10px;
+        flex-wrap: nowrap;
+    }
+    
+    .courseImage{
+        width: 100%;
+    }
+    
+    .course{
+        width: 25%;
+        text-align: center;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    #wrapper{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    
+    .left_align{
+        background-color: black;
+        color: aliceblue;
+        font-weight: 1000;
+        font-size: 20px;
+        height: 40%;
+        position: sticky;
+        top: 0;
+        /* height: 100vh; */
+        /* box-sizing: border-box; */
+    }
+    
+    .icon{
+        width: 8%;
+    }
+    
+    .link_color{
+        color: aliceblue;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

@@ -1,0 +1,19 @@
+.box{
+    width: 200px;
+    height: 200px;
+    font-size: 18px;
+    color: aliceblue;
+    background-color: rebeccapurple;
+    transition-property: width, height, background-color, font-size, color;
+    transition-timing-function: ease;
+    transition-delay: 0ms;
+    transition-duration: 1s;
+}
+
+.box:hover{
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+    font-size: 40px;
+    color: black;
+}

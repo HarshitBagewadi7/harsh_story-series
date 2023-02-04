@@ -4,10 +4,6 @@
     src: url('fonts/RobotoSlab-Black.ttf');
 }
 
-.main {
-    font-family: 'Cookie', cursive;
-    font-size: 24px;
-}
 
 .parent{
     background-color: #ffebcd;
@@ -15,9 +11,9 @@
     /* border: 20px; */
 }
 
-progress{
-    margin-left: 100px;
-    align-self: center;
+.main {
+    font-family: 'Cookie', cursive;
+    font-size: 24px;
 }
 
 a:link {
@@ -36,35 +32,49 @@ table{
     text-align: left;
 }
 
+.profile_pic{
+    width: 140px;
+    height: 140px;
+    /* transition-property: width, height;
+    transition-delay: 0ms;
+    transition-duration: 1s;
+    transition-timing-function: ease; */
+    transition: width 1s ease, height 1s ease;
+}
+
+.profile_pic:hover{
+    width: 280px;
+    height: 280px;
+}
+
+
 .header{
     background-color: burlywood;
-    /*padding: 2px;
-    width: 1000px;*/
+    /* width: 100px;
+    height: 100px;
+    /*padding: 2px; */
+    /* width: 700px; */
     /* position: sticky; */
     top: 5%;
     /* top: 10px; */
     text-align: left; clear: both;
     font-family: 'Aclonica', sans-serif;
+    font-size: 16px;
     /*font-family: 'Roboto Slab', serif;
     /*font-family: 'Roboto Slab', sans-serif; /*Custom Font Style Import*/
+    /* transition-property: width, height, font-size, color, backround-color;
+    transition-delay: 0ms;
+    transition-duration: 1s;
+    transition-timing-function: ease; */
+    transition: all 1s ease;
 }
 
-.direct_links{
-    background-color: burlywood;
-    padding: 2px;
-    position: sticky;
-    top: 1%;
-    /*width: 1000px;*/
-    font-size: 16px;
-    font-family: 'Aclonica', sans-serif;
-    /*font-family: 'Roboto Slab', sans-serif; /*Custom Font Style Import*/
-}
-
-.date{
-    background-color: #deb887;
-    /*padding: 2px;
-    width: 1000px;*/
-    font-size: 24px;
+.header:hover{
+    width: 1400px;
+    /* height: 1400px; */
+    font-size: 32px;
+    color: white;
+    background-color: black;    
 }
 
 .container:hover{
@@ -78,8 +88,57 @@ table{
 .right_align{
     float: right; clear: both;
     padding-left: 500px;
-    /*style="text-align: right: ; clear: left"*/
-    /*text-align: right: clear: both;*/
+    /* display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end; */
+    /* style="text-align: right: ; clear: left" */
+    text-align: right; clear: both;
+}
+
+.direct_links{
+    background-color: burlywood;
+    padding: 2px;
+    position: sticky;
+    top: 1%;
+    /*width: 1000px;*/
+    font-size: 16px;
+    font-family: 'Aclonica', sans-serif;
+    /*font-family: 'Roboto Slab', sans-serif; /*Custom Font Style Import*/
+}
+
+.inputs{
+    background-color: #deb887;
+    /*padding: 2px;
+    width: 1000px;*/
+    padding: 5px;
+    /* display: flex; */
+    font-size: 24px;
+    /* flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px 10px;
+    grid-template-areas: 
+    "date submit"
+    "place sign";
+}
+.date{
+    grid-area: date;
+}
+.submit{
+    grid-area: submit;
+    text-align: right; clear: left;
+}
+.place{
+    grid-area: place;
+}
+.sign{
+    grid-area: sign;
+    text-align: right; clear: left;
 }
 
 progress{
@@ -88,6 +147,8 @@ progress{
     -moz-appearance: none;
     height: 15px;
     width: 200px;
+    margin-left: 100px;
+    align-self: center;
     border-radius: 5px;
     overflow: hidden;
     background-color: rgb(148,96,61);
@@ -109,7 +170,8 @@ progress[value]::-webkit-progress-value{
 }
 
 .cookies{
-    align-items: center;clear: both;
+    align-content: center;
+    /* align-items: center;clear: both; */
     background-color: #a15b00;
     padding: 20px 20px 20px 20px;
     text-align: left;
@@ -137,3 +199,12 @@ button{
     font-weight: bold;
 }
 
+
+@media print {
+    .container {
+        background-color: white;
+        padding: 1%;
+        color: black;
+        font-size: 16px;
+    }
+}

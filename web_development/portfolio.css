@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    background-color: gainsboro;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: navy;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+#intro{
+    display: flex;
+    padding: 20px;
+    background-color: lightblue;
+    justify-content: center;
+}
+
+.socialMedia{
+    display: flex;
+    /* padding: 20px; */
+    padding-top: 20px;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+/* .wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    padding: 10px;
+} */
+.part-1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    padding-top: 10px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+.part-2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    padding: 10px;
+}
+.number{
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    background-color: royalblue;
+    background-size: contain;
+    border-radius: 10px;
+
+
+    /* border-radius: 10px; */
+    /* color: white; */
+}

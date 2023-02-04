@@ -1,0 +1,28 @@
+.container{
+    background-color: lightgray;
+    padding: 10px;
+    display: grid;
+
+
+    grid-template-columns: 200px 150px 3fr 2fr;
+    /* grid-template-columns: 200px 150px 3fr 2fr represents to break remaining coloumns in that ratio; */
+    /* grid-template-columns: repeat(auto-fill, 100px); */
+    /* autofill fills repaets based of size of browser */
+    /* grid-template-columns: repeat(4, 100px); */
+    /* grid-template-columns: repeat(number, size); */
+    /* grid-template-columns: 200px 200px auto; */
+    /* grid-template-columns: 200px 200px 400px; */
+    /* grid-template-columns: col1 col2 col3; */
+
+
+    grid-template-rows: repeat(3, 150px);
+    /* grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    grid-gap: 10p 10px;
+}
+
+.item{
+    background-color: tomato;
+    padding: 5px;
+    color: white;
+}
